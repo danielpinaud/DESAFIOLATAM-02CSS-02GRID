@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(202, 198, 198);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "head head"
+        "side main"
+        "foot foot"
+    ;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 5% 100% 5%;
+}
+
+.navbar{
+    grid-area: head;
+    text-align: center;
+    display:flex;
+    background-color: rgb(39, 39, 112);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar > h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.sidebar{
+    grid-area: side;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar > h3 {
+    margin-top: 7%;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.sidebar > ul > li{
+    margin-top: 10px;
+}
+
+.no-link{
+    pointer-events:visibleStroke;
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.cantidad{
+    color: grey;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.mainContent{
+    grid-area: main;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(32%, 0fr));
+    grid-template-rows: repeat(3, 25%);
+    gap: 10px;
+    margin-top: 0.5%;
+}
+
+.producto{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.imgProd{
+    height: 60%;
+    width: 60%;
+    align-self: center;
+}
+.nombreProd{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    text-wrap: wrap;
+}
+.precioProd{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+.botonProd{
+    background-color: rgb(39, 39, 112);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    height: 15%;
+}
+.botonProd:hover{
+    background-color: rgb(62, 62, 233) !important;
+    
+}
+
+.footer{
+    grid-area: foot;
+    text-align: center;
+    display:flex;
+    background-color: rgb(39, 39, 112);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > span{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
