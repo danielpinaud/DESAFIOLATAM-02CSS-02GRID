@@ -18,7 +18,7 @@ body{
     grid-template-rows: 5% 100% 5%;
 }
 
-.mainContent{
+.Container-Productos{
     grid-area: MAIN;
     display: grid;
     justify-items: center;
@@ -52,7 +52,7 @@ body{
             margin-top: 5px;
         }
 
-        .no-link{
+        .categoria{
             pointer-events:visibleStroke;
             text-decoration: none;
             color: black;
